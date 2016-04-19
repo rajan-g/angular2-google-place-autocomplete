@@ -1,0 +1,26 @@
+{
+  "name": "google map auto complete",
+  "authors": [
+    "RAJAN G (rajangmca@gmcail.com)"
+  ],
+  "description": "google map auto complete for angular2",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "angular2",
+    "angular2-google-map-auto-complete",
+	"angular2-google-autocomplete"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
