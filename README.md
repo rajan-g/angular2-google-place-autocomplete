@@ -1,9 +1,34 @@
 Angular2
 =========
 
-The sources for this package are in the main [Angular2](https://github.com/angular/angular) repo. Please file issues and pull requests against that repo. This is the repository for the upcoming 2.0 version. If you're looking for the current official version of Angular you should go to [angular/angular.js](https://github.com/angular/angular.js)
+The sources for this package are in (https://github.com/rajan-g/angular2-google-place-autocomplete) repo. Please file issues and pull requests against that repo.
 
-This package contains different sources for different users:
+##Usage
+1.In index.html page include following script  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+2.component file use like below
+ ```typescript
+
+import {Component} from 'angular2/core';
+import {GoogleplaceDirective} from '../directives/googleplace.directive';
+
+@Component({
+    selector : 'my-app',
+    directives: [GoogleplaceDirective],
+    template:  `
+        <input type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" googleplace/>
+        `    
+})
+export class AppComponent {
+    public address : Object;
+    getAddress(place:Object) {       
+        this.address = place['formatted_address'];
+        var location = place['geometry']['location'];
+        var lat =  location.lat();
+        var lng = location.lng();
+        console.log("Address Object", place);
+    }
+}
+```typescript
 
 1. The files located in the root folder can be consumed using CommonJS.
 2. The files under `/es6` are es6 compatible files that can be transpiled to
