@@ -1,5 +1,5 @@
 {
-  "name": "google_auto_complete",
+  "name": "angular2-google-map-auto-complete",
   "version": "1.0.0",
   "description": "google map auto complete directive for angular2",
   "main": "index.js",
