@@ -9,6 +9,7 @@ import {GoogleplaceDirective} from '../directives/googleplace.directive';
     selector : 'my-app',
     directives: [GoogleplaceDirective],
     template:  `
+	Type Location :
         <input type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" googleplace/>
         `    
 })

@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * @author RAJAN G
  */
 System.register(['angular2/core', '../directives/googleplace.directive'], function(exports_1, context_1) {
     "use strict";
@@ -40,7 +38,7 @@ System.register(['angular2/core', '../directives/googleplace.directive'], functi
                     core_1.Component({
                         selector: 'my-app',
                         directives: [googleplace_directive_1.GoogleplaceDirective],
-                        template: "\n        <input type=\"text\" [(ngModel)] = \"address\"  (setAddress) = \"getAddress($event)\" googleplace/>\n        "
+                        template: "\n\tType Location :\n        <input type=\"text\" [(ngModel)] = \"address\"  (setAddress) = \"getAddress($event)\" googleplace/>\n        "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

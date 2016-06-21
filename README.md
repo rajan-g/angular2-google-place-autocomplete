@@ -1,5 +1,7 @@
 Angular2
 =========
+##Sample 
+	![google-search](https://cloud.githubusercontent.com/assets/13415700/16227016/e4ea3010-37cb-11e6-94ea-0d39b4650290.png)
 
 The sources for this package are in (https://github.com/rajan-g/angular2-google-place-autocomplete) repo. Please file issues and pull requests against that repo.
 
