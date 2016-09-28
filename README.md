@@ -5,6 +5,10 @@ Angular2
 
 The sources for this package are in (https://github.com/rajan-g/angular2-google-place-autocomplete) repo. Please file issues and pull requests against that repo.
 
+### Live Demo
+[Live Demo Site](http://www.angular2modules.com/google "Live Demo Site For Google Place Auto Complete ")
+OR
+[Live Demo Site](http://www.angular2modules.com "Live Demo Site For Google Place Auto Complete ")
 ##Usage
     node install
       npm install angular2-google-map-auto-complete
