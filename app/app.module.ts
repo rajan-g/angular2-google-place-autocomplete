@@ -9,4 +9,4 @@ import {GoogleplaceDirective} from '../directives/googleplace.directive';
   declarations: [ AppComponent,GoogleplaceDirective ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class GooglePlace { }

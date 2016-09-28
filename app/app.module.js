@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/forms', '@angular/platform-browser',
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, forms_1, platform_browser_1, app_component_1, googleplace_directive_1;
-    var AppModule;
+    var GooglePlace;
     return {
         setters:[
             function (core_1_1) {
@@ -30,20 +30,20 @@ System.register(['@angular/core', '@angular/forms', '@angular/platform-browser',
                 googleplace_directive_1 = googleplace_directive_1_1;
             }],
         execute: function() {
-            AppModule = (function () {
-                function AppModule() {
+            GooglePlace = (function () {
+                function GooglePlace() {
                 }
-                AppModule = __decorate([
+                GooglePlace = __decorate([
                     core_1.NgModule({
                         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
                         declarations: [app_component_1.AppComponent, googleplace_directive_1.GoogleplaceDirective],
                         bootstrap: [app_component_1.AppComponent]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppModule);
-                return AppModule;
+                ], GooglePlace);
+                return GooglePlace;
             }());
-            exports_1("AppModule", AppModule);
+            exports_1("GooglePlace", GooglePlace);
         }
     }
 });

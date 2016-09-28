@@ -13,7 +13,7 @@ System.register(['@angular/platform-browser-dynamic', './app.module'], function(
             }],
         execute: function() {
             platform = platform_browser_dynamic_1.platformBrowserDynamic();
-            platform.bootstrapModule(app_module_1.AppModule);
+            platform.bootstrapModule(app_module_1.GooglePlace);
         }
     }
 });
