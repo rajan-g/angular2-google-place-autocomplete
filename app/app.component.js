@@ -1,7 +1,7 @@
 /*
  * @author RAJAN G
  */
-System.register(['@angular/core', '../directives/googleplace.directive'], function(exports_1, context_1) {
+System.register(['@angular/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,15 +13,12 @@ System.register(['@angular/core', '../directives/googleplace.directive'], functi
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, googleplace_directive_1;
+    var core_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (googleplace_directive_1_1) {
-                googleplace_directive_1 = googleplace_directive_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -37,7 +34,6 @@ System.register(['@angular/core', '../directives/googleplace.directive'], functi
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        directives: [googleplace_directive_1.GoogleplaceDirective],
                         template: "\n\tType Location :\n        <input type=\"text\" [(ngModel)] = \"address\"  (setAddress) = \"getAddress($event)\" googleplace/>\n        "
                     }), 
                     __metadata('design:paramtypes', [])

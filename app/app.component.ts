@@ -3,11 +3,10 @@
  */
 
 import {Component} from '@angular/core';
-import {GoogleplaceDirective} from '../directives/googleplace.directive';
+
 
 @Component({
     selector : 'my-app',
-    directives: [GoogleplaceDirective],
     template:  `
 	Type Location :
         <input type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" googleplace/>

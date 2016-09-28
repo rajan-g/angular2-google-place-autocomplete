@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/common'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/forms'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(['@angular/core', '@angular/common'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1;
+    var core_1, forms_1;
     var GoogleplaceDirective;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (common_1_1) {
-                common_1 = common_1_1;
+            function (forms_1_1) {
+                forms_1 = forms_1_1;
             }],
         execute: function() {
             GoogleplaceDirective = (function () {
@@ -47,12 +47,12 @@ System.register(['@angular/core', '@angular/common'], function(exports_1, contex
                 GoogleplaceDirective = __decorate([
                     core_1.Directive({
                         selector: '[googleplace]',
-                        providers: [common_1.NgModel],
+                        providers: [forms_1.NgModel],
                         host: {
                             '(input)': 'onInputChange()'
                         }
                     }), 
-                    __metadata('design:paramtypes', [core_1.ElementRef, common_1.NgModel])
+                    __metadata('design:paramtypes', [core_1.ElementRef, forms_1.NgModel])
                 ], GoogleplaceDirective);
                 return GoogleplaceDirective;
             }());

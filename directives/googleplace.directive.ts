@@ -1,5 +1,5 @@
 import {Directive, ElementRef, EventEmitter, Output} from '@angular/core';
-import {NgModel} from '@angular/common';
+import {NgModel} from '@angular/forms';
 
 declare var google:any;
 
