@@ -1,6 +1,6 @@
 {
   "name": "angular2-google-map-auto-complete",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "google map auto complete directive for angular2",
   "main": "index.js",
   "keywords": [
@@ -11,6 +11,9 @@
     "google-place-auto-complete"
   ],
   "dependencies": {
+    
+  },
+  "devDependencies": {
     "@angular/common": "^2.4.2",
     "@angular/compiler": "^2.4.2",
     "@angular/compiler-cli": "^2.4.2",
@@ -30,8 +33,6 @@
     "systemjs": "0.19.27",
     "typescript": "^2.1.4",
     "zone.js": "^0.7.4"
-  },
-  "devDependencies": {
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
