@@ -11,7 +11,7 @@
     "google-place-auto-complete"
   ],
   "dependencies": {
-    
+    "typings": "^0.8.1"
   },
   "devDependencies": {
     "@angular/common": "^2.4.2",
@@ -34,17 +34,15 @@
     "typescript": "^2.1.4",
     "zone.js": "^0.7.4",
     "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^0.8.1"
+    "lite-server": "^2.2.0"
   },
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
+    "start": "$(npm bin)/tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "$(npm bin)/tsc",
+    "tsc:w": "$(npm bin)/tsc -w",
     "lite": "lite-server",
-    "typings": "typings",
-    "postinstall": "typings install"
+    "typings": "$(npm bin)/typings",
+    "postinstall": "$(npm bin)/typings install"
   },
   "license": "ISC",
   "author": "Rajan G"
