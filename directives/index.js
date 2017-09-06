@@ -6,9 +6,6 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
         else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
-    var __metadata = (this && this.__metadata) || function (k, v) {
-        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-    };
     var __moduleName = context_1 && context_1.id;
     var core_1, platform_browser_1, forms_1, googleplace_directive_1, GooglePlaceModule, GooglePlaceModule_1;
     return {
@@ -39,8 +36,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
                     declarations: [googleplace_directive_1.GoogleplaceDirective],
                     exports: [googleplace_directive_1.GoogleplaceDirective],
                     providers: []
-                }),
-                __metadata("design:paramtypes", [])
+                })
             ], GooglePlaceModule);
             exports_1("GooglePlaceModule", GooglePlaceModule);
         }
