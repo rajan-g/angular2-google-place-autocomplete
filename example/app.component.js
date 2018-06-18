@@ -1,26 +1,45 @@
 /*
  * @author RAJAN G
  */
-import { Component } from '@angular/core';
-var AppComponent = (function () {
-    function AppComponent() {
-    }
-    AppComponent.prototype.getAddress = function (place) {
-        this.address = place['formatted_address'];
-        var location = place['geometry']['location'];
-        var lat = location.lat();
-        var lng = location.lng();
-        console.log("Address Object", place);
+System.register(["@angular/core"], function (exports_1, context_1) {
+    "use strict";
+    var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
-    AppComponent.decorators = [
-        { type: Component, args: [{
+    var __moduleName = context_1 && context_1.id;
+    var core_1, AppComponent;
+    return {
+        setters: [
+            function (core_1_1) {
+                core_1 = core_1_1;
+            }
+        ],
+        execute: function () {/*
+             * @author RAJAN G
+             */
+            AppComponent = class AppComponent {
+                getAddress(place) {
+                    this.address = place['formatted_address'];
+                    var location = place['geometry']['location'];
+                    var lat = location.lat();
+                    var lng = location.lng();
+                    console.log("Address Object", place);
+                }
+            };
+            AppComponent = __decorate([
+                core_1.Component({
                     selector: 'my-app',
-                    template: "\n\tType Location :\n        <input type=\"text\" [(ngModel)] = \"address\"  (setAddress) = \"getAddress($event)\" googleplace/>\n        "
-                },] },
-    ];
-    /** @nocollapse */
-    AppComponent.ctorParameters = function () { return []; };
-    return AppComponent;
-}());
-export { AppComponent };
+                    template: `
+	Type Location :
+        <input type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" googleplace/>
+        `
+                })
+            ], AppComponent);
+            exports_1("AppComponent", AppComponent);
+        }
+    };
+});
 //# sourceMappingURL=app.component.js.map
